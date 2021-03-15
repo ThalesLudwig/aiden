@@ -10,8 +10,8 @@ const orchestrator = (input) => {
     const nothingFound = Finder({ lang: input.lang || LANG_CONSTANTS.EN_US });
     return nothingFound;
   }
-  persistToContext(content);
-  const response = dealer(content);
+  const context = persistToContext(content);
+  const response = dealer(content, context);
   return response;
 };
 
