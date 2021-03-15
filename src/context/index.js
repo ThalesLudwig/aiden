@@ -1,12 +1,13 @@
 const contextMemory = [];
 
-const persist = (context) => {
-    contextMemory.push(context);
+const get = () => contextMemory;
+
+const add = (data) => {
+  contextMemory.push(data);
+  return contextMemory;
 };
 
-const context = (data) => {
-    persist(data);
-    return contextMemory;
+module.exports = {
+  get,
+  add,
 };
-
-module.exports = context;
