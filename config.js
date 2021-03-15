@@ -1,5 +1,6 @@
 const MODULES = [
     "greeter",
+    "finder",
 ];
 
 const LANGUAGUES = [
