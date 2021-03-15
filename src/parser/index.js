@@ -2,17 +2,21 @@ const LANG = require("../constants/lang");
 const dictionary = require("../dictionary");
 
 function parser(input) {
-    if (!input || !input.data) return null;
-    const { data, lang } = input;
-    if (!lang) lang = LANG.EN_US;
-    
-    const intention = dictionary(data, lang);
-    const content = {
-        intention,
-        context: data,
-        lang,
-    };
-    return content;
-};
+  let data = "";
+  let lang = LANG.EN_US;
+  if (!!input && !!input.data) {
+    data = input.data;
+    lang = input.lang;
+  }
+
+  const splittedData = data.split(" ");
+  const intention = dictionary(splittedData, lang);
+  const content = {
+    intention,
+    input: data,
+    lang,
+  };
+  return content;
+}
 
 module.exports = parser;
