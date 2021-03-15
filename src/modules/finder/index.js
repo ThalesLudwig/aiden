@@ -13,11 +13,16 @@ const Finder = ({ lang, context }) => {
   const contextSecondAttempt = context[context.length - 3];
 
   if (
+    !!contextFirstAttempt &&
     contextFirstAttempt.intention.length === 0 &&
+    !!contextSecondAttempt &&
     contextSecondAttempt.intention.length === 0
   ) {
     return getRandomIndexFor(contextResponses.ATTEMPT_2);
-  } else if (contextFirstAttempt.intention.length === 0) {
+  } else if (
+    !!contextFirstAttempt &&
+    contextFirstAttempt.intention.length === 0
+  ) {
     return getRandomIndexFor(contextResponses.ATTEMPT_1);
   }
 

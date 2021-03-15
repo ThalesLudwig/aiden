@@ -2,12 +2,8 @@ const LANG = require("../constants/lang");
 const dictionary = require("../dictionary");
 
 function parser(input) {
-  let data = "";
-  let lang = LANG.EN_US;
-  if (!!input && !!input.data) {
-    data = input.data;
-    lang = input.lang;
-  }
+  const data = !!input && !!input.data ? input.data : "";
+  const lang = !!input && !!input.lang ? input.lang : LANG.EN_US;
 
   const splittedData = data.split(" ");
   const intention = dictionary(splittedData, lang);
