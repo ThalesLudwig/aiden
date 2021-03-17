@@ -1,10 +1,6 @@
 const RESPONSES = require("./src/responses");
 const CONTEXT = require("./src/context");
-
-const getRandomIndexFor = (array) => {
-  const randomIndex = Math.floor(Math.random() * array.length);
-  return array[randomIndex];
-};
+const getRandomIndexFor = require("../../helpers/getRandomIndex");
 
 const Finder = ({ lang, context }) => {
   const grammar = RESPONSES[lang];
