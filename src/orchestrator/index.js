@@ -8,7 +8,7 @@ const orchestrator = (input) => {
   const content = parser(input);
   context.add(content);
 
-  if (content.intention.length === 0) {
+  if (content.intentions.length === 0) {
     const nothingFound = Finder({
       context: context.get(),
       lang: input.lang || LANG_CONSTANTS.EN_US,

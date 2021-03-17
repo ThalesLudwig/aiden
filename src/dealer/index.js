@@ -1,9 +1,9 @@
 const dealer = (data, context) => {
   const responses = [];
 
-  data.intention.forEach(({ module, found }) => {
+  data.intentions.forEach(({ module, expression }) => {
     const response = require(`../modules/${module}`)({
-      expression: found,
+      expression,
       lang: data.lang,
       context,
     });
