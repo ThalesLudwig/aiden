@@ -1,5 +1,6 @@
 const dealer = (data, context) => {
   const responses = [];
+  if (!data) return [];
 
   data.intentions.forEach(({ module, expression }) => {
     const response = require(`../modules/${module}`)({
