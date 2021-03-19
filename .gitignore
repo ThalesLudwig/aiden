@@ -4,3 +4,7 @@ node_modules/
 .env*.local
 dist/
 temp/
+
+src/modules/*
+!src/modules/finder/
+!src/modules/greeter/
