@@ -2,7 +2,7 @@ const LANG = require("../constants/lang");
 const dictionary = require("../dictionary");
 
 function parser(input) {
-  const data = !!input && !!input.data ? input.data : "";
+  const data = !!input && !!input.data ? input.data.trim() : "";
   const lang = !!input && !!input.lang ? input.lang : LANG.EN_US;
 
   const intentions = dictionary(data, lang);
