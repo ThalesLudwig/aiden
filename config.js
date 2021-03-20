@@ -1,6 +1,7 @@
 const MODULES = [
     "greeter",
     "finder",
+    "aiden-recruiter",
 ];
 
 const LANGUAGUES = [
