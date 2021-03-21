@@ -23,4 +23,7 @@ module.exports = [
   "english",
   "who are you",
   "fun fact",
+  "study",
+  "formation",
+  "university",
 ];

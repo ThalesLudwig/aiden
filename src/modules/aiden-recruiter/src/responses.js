@@ -4,7 +4,7 @@ const PT_BR = {
   SCHOOLING: [
     "Sou formado no ensino superior em Análise e Desenvolvimento de Sistemas, pela Faculdade QI",
     "Atualmente estou cursando duas especializações na UniRitter:",
-    "Desenvolvimento Mobile e User Experience",
+    "Desenvolvimento de Aplicações Móveis e Experiência de Usuário",
   ],
   CAREER: [
     "Comecei minha carreira trabalhando com Java na Dell, em 2015, como estagiário",
@@ -43,8 +43,8 @@ const PT_BR = {
     "E um pouco de PHP. :)",
   ],
   CONTACT: [
-    "Pode entrar em contato comigo através das minhas redes sociais",
-    "O e-mail é thales.ludwig@gmail.com",
+    "Pode entrar em contato comigo através das minhas redes sociais ou e-mail:",
+    "thales.ludwig@gmail.com",
   ],
   TECHNOLOGIES: [
     "Eu trabalho com qualquer coisa em Javascript!",
@@ -56,8 +56,8 @@ const PT_BR = {
 const EN_US = {
   SCHOOLING: [
     "I am graduated in 'Systems Analysis and Development', at QI University in Brazil",
-    "I am currently have two specializations ongoing at UniRitter University:",
-    "Mobile Apps Development and User Experience",
+    "Currently I have two specializations ongoing at UniRitter University:",
+    "Mobile App Development and User Experience",
   ],
   CAREER: [
     "I started my career working with Java at Dell in 2015, as an intern",
@@ -66,7 +66,7 @@ const EN_US = {
     "Still at Datum, in 2018, I had my first experience as a tech leader!",
     "At the end of 2018 I left Datum and Brazil when I was hired as a Senior Engineer by Aptvision, in Dublin, Ireland",
     "In 2019, back in Brazil, I continued to work as a Senior Full-Stack Engineer at Sensedia, working on the Albatroz Project",
-    "At the end of 2019 I leave the offices and start my career as an Engineer at X-Team remotely!",
+    "At the end of 2019 I left the offices and started my career as an Engineer at X-Team, remotely!",
   ],
   PROJECTS: [
     "All of my projects are open on Github, including this page and the bot you're talking to!",
@@ -96,8 +96,8 @@ const EN_US = {
     "And a little PHP. :)",
   ],
   CONTACT: [
-    "You can contact me through my social networks",
-    "The e-mail is thales.ludwig@gmail.com",
+    "You can contact me through my social networks or by e-mail",
+    "thales.ludwig@gmail.com",
   ],
   TECHNOLOGIES: [
     "I work with anything in JavaScript!",

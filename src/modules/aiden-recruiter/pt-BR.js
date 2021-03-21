@@ -29,4 +29,7 @@ module.exports = [
   "quem é voce",
   "quem e você",
   "quem e voce",
+  "estud",
+  "formação",
+  "universidade",
 ];
