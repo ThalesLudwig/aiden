@@ -32,4 +32,5 @@ module.exports = [
   "estud",
   "formação",
   "universidade",
+  "linguagens",
 ];
