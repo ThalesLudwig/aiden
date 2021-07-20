@@ -2,19 +2,18 @@
 
 Artificial Intelligence Designed for Extensions in Node
 
-
 ## About the project
 
-AIDEN is an open-source chatbot built on the idea of being entirely modular. It consists of an API with a single endpoint ready 
+AIDEN is an open-source chatbot built on the idea of being entirely modular. It consists of an API with a single endpoint ready
 to receive a string (the user input), routing it to the appropriate modules based on the words or expressions found, and returning a valid response.
 It is currently in early development.
 
 ### Built With
 
-* [NodeJS](https://nodejs.org/en/)
-
+- [NodeJS](https://nodejs.org/en/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Installation
@@ -36,24 +35,26 @@ It is currently in early development.
    npm start
    ```
 
-   
 ### Usage
 
 A single endpoint ("/") will be served for POST requests:
-   ```
-   {
-     "data": "what can you do?",
-     "lang": "en-US"
-   }
-   ```
-   If no "lang" is provided, en-US will always be used as default.
+
+```
+{
+  "data": "what can you do?",
+  "lang": "en-US"
+}
+```
+
+If no "lang" is provided, en-US will always be used as default.
 
 ## Modules
 
 ### Structure
 
-All Modules are simple Javascript functions that will receive as argument an object with three properties: **lang**, **context**, and **expression**, 
+All Modules are simple Javascript functions that will receive as argument an object with three properties: **lang**, **context**, and **expression**,
 and return the expected response with no specific format.
+
 - lang: the language currently used by the user, such as "en-US" or "pt-BR"
 - context: an array of previous user inputs
 - expression: the word or expression inputed by the user that was recognized by the module
@@ -91,12 +92,13 @@ This file should return a simple array of strings containing the words or expres
 module.exports = ["hi", "e-mail", "new message", "verify", "remove", "send message to"];
 ```
 
+Bear in mind that diacritics will be internally removed, so the expressions should always be normalized.
+
 ### Adding new languages
 
 - Open `/config.js` and add your new supported language code to the LANGUAGUES array.
 
 Your module's language file will not be recognized if the language code is not specified here.
-
 
 ## Contributing
 
@@ -107,6 +109,7 @@ I am accepting contributions. Any contributions you make, be it bug fixes or new
 Distributed under the MIT License.
 
 <!-- CONTACT -->
+
 ## Contact
 
 - Twitter: [@thalesludwig](https://twitter.com/thalesludwig)
