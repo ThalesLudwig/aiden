@@ -29,6 +29,10 @@ It is currently in early development.
    ```
 3. Serve
    ```
+   npm run web
+   ```
+   or with Nodemon:
+   ```
    npm start
    ```
 
