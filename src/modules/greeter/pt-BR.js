@@ -1,1 +1,1 @@
-module.exports = ["por favor", "oi", "olá", "obrigado"];
+module.exports = ["por favor", "oi", "ola", "obrigado"];
