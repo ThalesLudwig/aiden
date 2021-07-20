@@ -7,7 +7,7 @@ Artificial Intelligence Designed for Extensions in Node
 
 AIDEN is an open-source chatbot built on the idea of being entirely modular. It consists of an API with a single endpoint ready 
 to receive a string (the user input), routing it to the appropriate modules based on the words or expressions found, and returning a valid response.
-It is currently in alpha stage.
+It is currently in early development.
 
 ### Built With
 
