@@ -15,6 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
+
+// calls Orchestrator
 app.use("/", indexRouter);
 
 // catch 404 and forward to error handler
@@ -22,7 +24,7 @@ app.use(function (req, res, next) {
   next(createError(404));
 });
 
-// loads grammar
+// lets Dictionary initialize the grammar
 storage.initialize();
 
 // error handler

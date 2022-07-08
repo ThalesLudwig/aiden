@@ -7,7 +7,4 @@ const add = (data) => {
   return contextMemory;
 };
 
-module.exports = {
-  get,
-  add,
-};
+module.exports = { get, add };
